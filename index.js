@@ -40,8 +40,8 @@ bot.on('message', async (msg) => {
   if(msg.text === "/start") return;
   try
   {
-    const { nftItems } = await nftApi.getNftItemsByCollectionAddress({account: collectionAddress});
     let nftCount = 0;
+    const { nftItems } = await nftApi.getNftItemsByCollectionAddress({account: collectionAddress});
     nftItems.forEach(nftItem => {
       let address = new Address(nftItem.owner.address).toString(true, true, true);
       if(address == msg.text)
