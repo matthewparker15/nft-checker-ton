@@ -1,0 +1,5 @@
+{
+  "name": "bot_nft_checker",
+  "packageManager": "yarn@3.2.1",
+  "type": "module"
+}
